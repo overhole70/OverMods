@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Over Mods | منصة مبدعي البيدروك</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8123364973641464"
+     crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary-color: #84cc16; /* default lime-500 */
+            --primary-hover: #65a30d; /* default lime-600 */
+            --primary-alpha: rgba(132, 204, 22, 0.1);
+            --primary-alpha-soft: rgba(132, 204, 22, 0.05);
+            --primary-shadow: rgba(132, 204, 22, 0.3);
+            --primary-shadow-soft: rgba(132, 204, 22, 0.2);
+            --bg-dark: #050505;
+            --card-bg: #0f0f0f;
+            --border-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-dark);
+            color: #f3f4f6;
+            -webkit-tap-highlight-color: transparent;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Elegant Decorated Background */
+        .bg-pattern {
+            background-color: #050505;
+            background-image: 
+                radial-gradient(circle at 2px 2px, var(--primary-alpha-soft) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .main-gradient-mesh {
+            background: 
+                radial-gradient(circle at 0% 0%, var(--primary-alpha-soft) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(20, 20, 20, 0.5) 0%, transparent 50%),
+                #050505;
+        }
+        
+        /* Theme Utility Classes */
+        .theme-bg-primary { background-color: var(--primary-color) !important; }
+        .theme-text-primary { color: var(--primary-color) !important; }
+        .theme-border-primary { border-color: var(--primary-color) !important; }
+        .theme-border-primary-alpha { border-color: var(--primary-alpha) !important; }
+        .theme-bg-primary-hover:hover { background-color: var(--primary-hover) !important; }
+        .theme-bg-primary-alpha { background-color: var(--primary-alpha) !important; }
+        .theme-shadow-primary { box-shadow: 0 10px 40px -10px var(--primary-shadow) !important; }
+        .theme-shadow-primary-soft { box-shadow: 0 10px 30px -15px var(--primary-shadow-soft) !important; }
+        .theme-fill-primary { fill: var(--primary-color) !important; }
+
+        /* Hide Scrollbars Globally */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        .sidebar-transition {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js",
+    "firebase/storage": "https://www.gstatic.com/firebasejs/10.13.2/firebase-storage.app",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js",    "firebase/": "https://esm.sh/firebase@^12.8.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-pattern main-gradient-mesh">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

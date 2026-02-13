@@ -1,0 +1,8 @@
+
+{
+  "name": "SDUI Dynamic Engine",
+  "description": "A high-performance Server-Driven UI engine designed for Capacitor/Android wrappers. Fully configuration-driven from Firebase.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
